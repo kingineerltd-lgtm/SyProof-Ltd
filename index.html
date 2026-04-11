@@ -5,89 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SyProof Ltd</title>
   <style>
+    :root {
+      --bg: #050505;
+      --text: #e8e8e8;
+      --muted: #a7a7a7;
+      --green: #0f5a35;
+      --gold: #c8a24a;
+      --line: #1a1a1a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background-color: #0a0f0a;
-      color: #e8e8e8;
+      background: var(--bg);
+      color: var(--text);
       font-family: "Times New Roman", serif;
-      text-align: center;
-      padding: 120px 20px;
+      padding: 56px 20px 40px;
     }
 
-    .container {
-      max-width: 680px;
+    .wrap {
+      max-width: 1280px;
       margin: 0 auto;
-      line-height: 1.8;
     }
 
-    h1 {
-      color: #c6a84a;
-      font-weight: normal;
-      letter-spacing: 1px;
-      margin: 0 0 60px 0;
+    .brand {
+      margin: 0 0 36px 0;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      line-height: 1.05;
+      color: var(--green);
+      text-transform: uppercase;
+      text-shadow:
+        0 0 0.5px #ffffff,
+        0 0 1px #0a0a0a,
+        0 0 8px rgba(200, 162, 74, 0.16);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+      display: inline-block;
     }
 
-    p {
+    .brand .ltd {
+      color: var(--gold);
+      margin-left: 0.18em;
+    }
+
+    .scroll-row {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 8px;
+      scrollbar-width: thin;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 280px);
+      gap: 28px;
+      min-width: max-content;
+    }
+
+    .panel {
+      padding-right: 6px;
+    }
+
+    .panel-title {
+      margin: 0 0 16px 0;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .panel p {
       margin: 0 0 12px 0;
+      font-size: 17px;
+      line-height: 1.55;
     }
 
-    .space-large {
-      margin-top: 36px;
+    .footer-block {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
     }
 
-    .identity {
-      font-size: 0.9em;
-      opacity: 0.85;
-    }
-
-    .footer {
-      font-size: 0.8em;
-      opacity: 0.6;
-      margin-top: 24px;
+    .rights {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>SyProof Ltd</h1>
+  <div class="wrap">
+    <h1 class="brand">SyProof<span class="ltd">Ltd.</span></h1>
 
-    <p>Prevailing systems describe, simulate, and advise.</p>
-    <p>They do not resolve real-world action at the point it occurs.</p>
+    <div class="scroll-row">
+      <div class="grid">
+        <section class="panel">
+          <h2 class="panel-title">System</h2>
+          <p>Prevailing systems describe, simulate, and advise.</p>
+          <p>They do not resolve real-world action at the point it occurs.</p>
+          <p>Execution is decoupled from observation.</p>
+        </section>
 
-    <div class="space-large"></div>
+        <section class="panel">
+          <h2 class="panel-title">Architecture</h2>
+          <p>SyProof Ltd licences protocol-grade execution architecture and certifies conformance to its execution CONOPS.</p>
+          <p>DigSphere Digital Twin Operating System (DT-OS) is an authoritative architectural specification defining deterministic event-time execution within bounded domains.</p>
+        </section>
 
-    <p>SyProof Ltd licences protocol-grade execution architecture and certifies conformance to deterministic execution CONOPS.</p>
+        <section class="panel">
+          <h2 class="panel-title">Execution</h2>
+          <p>The public layer is abstracted.</p>
+          <p>Core execution artefacts are sealed under DigSphere DT-OS architectural authority.</p>
+          <p>Execution is invariant across bounded domains.</p>
+        </section>
 
-    <div class="space-large"></div>
+        <section class="panel">
+          <h2 class="panel-title">Engagement</h2>
+          <p>Engagement proceeds through direct institutional and executive correspondence.</p>
+        </section>
+      </div>
+    </div>
 
-    <p>DigSphere Digital Twin Operating System (DT-OS) is an authoritative execution architecture in which verified actions resolve at event-time within bounded domains.</p>
-
-    <div class="space-large"></div>
-
-    <p>The system is deliberately abstracted.</p>
-    <p>Core execution artefacts remain sealed under DigSphere DT-OS architectural authority.</p>
-
-    <div class="space-large"></div>
-
-    <p>Execution remains invariant across bounded domains.</p>
-
-    <div class="space-large"></div>
-    <div class="space-large"></div>
-
-    <p>chief@syproof.com</p>
-    <p>London | Edinburgh</p>
-
-    <div class="space-large"></div>
-    <div class="space-large"></div>
-
-    <p class="identity">
-      Mart N King<br>
-      Protocol Originator<br>
-      Chief Systems Architect<br>
-      Founder and Chair, SyProof Ltd
-    </p>
-
-    <p class="footer">© SyProof Ltd. All rights reserved.</p>
+    <div class="footer-block">
+      <p class="rights">© SyProof Ltd. All rights reserved.</p>
+    </div>
   </div>
 </body>
 </html>
