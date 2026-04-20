@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyProof Ltd&trade</title>
+  <title>SyProof Ltd&trade;</title>
+  <style>
     body {
       margin: 0;
       padding: 72px 56px;
@@ -13,32 +14,54 @@
     }
 
     .page {
-      max-width: 1080px;
+      max-width: 1200px;
       margin: 0 auto;
+    }
+
+    .top-link {
+      margin: 0 0 40px 0;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .top-link a {
+      color: #000000;
+      text-decoration: none;
+      border-bottom: 1px solid #000000;
+    }
+
+    .top-link a:hover {
+      opacity: 0.7;
     }
 
     h1 {
       margin: 0 0 56px 0;
-      font-size: 24px;
+      font-size: 56px;
       font-weight: normal;
-      letter-spacing: 0.02em;
+      line-height: 1.05;
+      text-align: center;
+    }
+
+    .tagline {
+      margin: -28px 0 64px 0;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.5;
     }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 84px;
-      row-gap: 56px;
+      column-gap: 96px;
+      row-gap: 64px;
       align-items: start;
     }
 
-    .section-title {
-      margin: 0 0 14px 0;
-      font-size: 11px;
-      font-weight: normal;
-      letter-spacing: 0.14em;
+    .section-label {
+      margin: 0 0 18px 0;
+      font-size: 13px;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #444444;
     }
 
     .section p {
@@ -70,6 +93,12 @@
 
       h1 {
         margin-bottom: 40px;
+        font-size: 42px;
+      }
+
+      .tagline {
+        margin: -18px 0 44px 0;
+        font-size: 16px;
       }
 
       .footer {
@@ -78,42 +107,51 @@
     }
   </style>
 </head>
-  <p>&copy; 2026 SyProof Ltd. All rights reserved.</p>
 <body>
-<p><a href="authenticity.html">Authenticity</a></p>
   <div class="page">
-    <h1>SyProof Ltd</h1>
+
+    <div class="top-link">
+      <a href="authenticity.html">Authenticity</a>
+    </div>
+
+    <h1>SyProof Ltd&trade;</h1>
+    <div class="tagline">
+      Protocol-grade operating system for deterministic execution at event time.
+    </div>
 
     <div class="grid">
+
       <div class="section">
-        <div class="section-title">System</div>
+        <div class="section-label">System</div>
         <p>Prevailing systems describe, simulate, and advise.</p>
-        <p>They do not resolve real-world action at the point it occurs; execution is decoupled from observation.</p>
+        <p>They do not resolve real-world action at the point it occurs; execution remains decoupled from observation.</p>
       </div>
 
       <div class="section">
-        <div class="section-title">Architecture</div>
+        <div class="section-label">Architecture</div>
         <p>SyProof Ltd licences protocol-grade execution architecture and certifies conformance to its execution CONOPS.</p>
-        <p>DigSphere Digital Twin Operating System (DT-OS) is an authoritative architectural specification defining deterministic event-time execution within bounded domains.</p>
+        <p>DigSphere Digital Twin Operating System (DT-OS) is an authoritative architectural specification defining deterministic execution at event time within bounded domains.</p>
       </div>
 
       <div class="section">
-        <div class="section-title">Execution</div>
+        <div class="section-label">Execution</div>
         <p>The public layer is abstracted.</p>
         <p>Core execution artefacts are sealed under DigSphere DT-OS architectural authority.</p>
-        <p>Execution is invariant across bounded domains.</p>
+        <p>Execution remains invariant across bounded domains.</p>
       </div>
 
       <div class="section engagement">
-        <div class="section-title">Engagement</div>
+        <div class="section-label">Engagement</div>
         <p>Engagement proceeds through direct institutional and executive correspondence.</p>
         <p>London | Edinburgh</p>
       </div>
+
     </div>
 
     <div class="footer">
-      SyProof Ltd. All rights reserved.
+      &copy; 2026 SyProof Ltd. All rights reserved.
     </div>
+
   </div>
 </body>
 </html>
